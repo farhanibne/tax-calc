@@ -1,1 +1,1 @@
-# tax-calc
+# tip-calculator

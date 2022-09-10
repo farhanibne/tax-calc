@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://unpkg.com/react@18/umd/react.production.min.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+      crossorigin
+    ></script>
+    <link rel="shortcut icon" href="dz.png" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Tax Calculator</title>
+  </head>
+  <body>
+   
+   
+    <div class="wrapper">
+      <center>
+        <div>
+          <h1>Tax Calculator</h1>
+        </div>
+      </center>
+      <div class="container" id="topContainer">
+        <div class="title">Calculate Income Tax</div>
+        <div class="inputContainer">
+          <span>৳</span>
+          <input
+            onkeyup="calculatetax()"
+            type="number"
+            id="billTotalInput"
+            placeholder="0.00"
+          />
+        </div>
+      </div>
+    
+      <div class="container" id="bottom">
+        <div class="totalContainer">
+          <div class="title">Tax Amount</div>
+          <div class="total" id="perPersonTotal" style="color:#66b366">৳0.00</div>
+        </div>
+      </div>
+
+       <!-- surchage sector -->
+
+      <div class="container" id="topContainer">
+        <div class="title">Calculate Surcharge</div>
+        <div class="inputContainer">
+          <span>৳</span>
+          <input
+            onkeyup="calculatesurcharge()"
+            type="number"
+            id="surchargeInput"
+            placeholder="0.00"
+          />
+        </div>
+      </div>
+    
+      <div class="makehappen">
+
+     
+      <div class="container" id="bottom">
+        <div class="totalContainer">
+          <div class="title">Surcharge Amount</div>
+          <div class="total" id="surchageamount" style="color:#ccf381">৳0.00</div>
+        </div>
+      </div>
+      <br/>
+
+        <!-- total sector  -->
+
+          
+          <div class="abc" id="abc" style="margin-top: 1.4rem;">
+            <div class="abc">
+              <div class="title">Total Amount</div>
+              <div class="total" id="totalamount" style="color:#33ffff; font-size: 25px; ">৳0.00</div>
+            </div>
+            </div>
+
+          </div>     
+       
+
+    </div>
+
+
+
+    
+
+    <script type="text/javascript" src="script.js"></script>
+
+  </body>
+</html>
